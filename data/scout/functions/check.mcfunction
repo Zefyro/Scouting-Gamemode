@@ -13,6 +13,7 @@ execute unless entity @s[gamemode=spectator] if block ~ ~-1 ~ lava run scoreboar
 execute unless entity @s[gamemode=spectator] if block ~ ~ ~ lava run scoreboard players set @s Scout_NotSafe 2
 execute unless entity @s[gamemode=spectator] if block ~ ~1 ~ lava run scoreboard players set @s Scout_NotSafe 2
 execute unless entity @s[gamemode=spectator] if block ~ ~2 ~ lava run scoreboard players set @s Scout_NotSafe 2
+execute if entity @e[type=#scout:hostile,distance=..10] run scoreboard players set @s Scout_NotSafe 3
 #> Failed messages
 execute as @a[scores={Scout=1..,Scout_Cooldown=..199}] run function scout:scouting/cooldown
 execute as @a[scores={Scout=1..,Scout_Air=..299}] run function scout:scouting/dangerous
@@ -23,7 +24,3 @@ execute unless score @s Scout_NotSafe matches 0.. unless score @s Scout_Air matc
 #> Allowed to scout
 execute as @a[scores={Scout=1..},gamemode=spectator] at @s run function scout:scouting/stop
 execute as @a[scores={Scout=1..,Scout_Cooldown=200..,Scout_Safe=1},gamemode=!spectator] at @s run function scout:scouting/start
-
-
-
-
