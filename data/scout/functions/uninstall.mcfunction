@@ -5,6 +5,7 @@ scoreboard objectives remove Scout
 scoreboard objectives remove Scout_Dimension
 scoreboard objectives remove Scout_ForceLoad
 scoreboard objectives remove Scout_Gamemode
+scoreboard objectives remove Scouting
 scoreboard objectives remove Scout_x
 scoreboard objectives remove Scout_y
 scoreboard objectives remove Scout_z
