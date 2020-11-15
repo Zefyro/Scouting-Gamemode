@@ -3,4 +3,4 @@ execute as @a unless score @s Scout_Cooldown matches 200.. run scoreboard player
 
 execute as @a[scores={Scout=1..}] at @s run function scout:check
 
-
+execute as @a unless score @s VP.Scouting matches 1 run function scout:vanillaplus
