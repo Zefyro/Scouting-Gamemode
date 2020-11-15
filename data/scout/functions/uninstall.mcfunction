@@ -14,5 +14,7 @@ scoreboard objectives remove Scout_Air
 scoreboard objectives remove Scout_Safe
 scoreboard objectives remove Scout_NotSafe
 scoreboard objectives remove Scout_Cooldown
+#> Vanilla+
+scoreboard objectives remove VP.Scouting
 
 tellraw @a {"text":"Scouting Datapack uninstalled","color":"red"}
