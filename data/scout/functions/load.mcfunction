@@ -14,7 +14,8 @@ scoreboard objectives add Scout_Air air
 scoreboard objectives add Scout_Safe dummy
 scoreboard objectives add Scout_NotSafe dummy
 scoreboard objectives add Scout_Cooldown dummy
-
+#> Vanilla+
+scoreboard objectives add VP.Scouting dummy
 
 execute unless score #Loaded Scout_Timer matches 1 run tellraw @a {"text":"Scouting Datapack"}
 execute unless score #Loaded Scout_Timer matches 1 run scoreboard players set #Loaded Scout_Timer 1
