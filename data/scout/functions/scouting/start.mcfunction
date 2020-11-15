@@ -30,5 +30,6 @@ tag @s add Scouting
 #> Failed
 execute if score @s Scout_Gamemode matches 0 run tellraw @s {"text":"You are already in spectator mode","color": "red"}
 
+scoreboard players set @s Scouting 1
 
 scoreboard players reset @s Scout_NotSafe
